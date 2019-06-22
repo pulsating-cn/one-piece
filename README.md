@@ -1,6 +1,7 @@
 # one-piece
 
 最近迷上了海贼王,打算写一些关于海盗的东西
+See [one-piece](http://one-piece.pulsating.cn/)
 ## Project setup
 ```
 npm install
