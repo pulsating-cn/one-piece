@@ -1,23 +1,30 @@
 <template>
 	<div class="home">
-		<img alt="Vue logo" src="../assets/logo.png">
-		<HelloWorld msg="Welcome to Your Vue.js App" />
+		<img class="home-bg" alt="bg-xiuxiu" src="../assets/image/main-bg/bg-xiuxiu.jpg">
 	</div>
 </template>
 
 <script>
 	// @ is an alias to /src
-	import HelloWorld from '@/components/HelloWorld.vue'
-
+	
 	export default {
 		name: 'home',
 		components: {
-			HelloWorld
+			
 		},
 		data() {
 			return {
-				url: process.env.VUE_APP_URL,
+				
 			}
 		}
 	}
 </script>
+<style scroped>
+	.home-bg {
+		position: absolute;
+		right: 2rem;
+		bottom: 3rem;
+		width: 16rem;
+		z-index: -1;
+	}
+</style>
