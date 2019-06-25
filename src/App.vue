@@ -1,48 +1,52 @@
 <template>
-	<div id="app">
-		<div class="logo-div">
-			<img class="logo" src="@/assets/image/logo.jpg" />
-		</div>
-		<div id="nav">
-			<router-link to="/">Home</router-link> |
-			<router-link to="/appearance">Appearance</router-link> |
-			<router-link to="/me">me</router-link> |
-			<router-link to="/one-piece">One-piece</router-link> 
-		</div>
-		<router-view />
-	</div>
+	<v-app id="inspire">
+		<v-toolbar color="elevation-0" fixed app dense>
+			<div class="nav">
+				<router-link to="/">Home</router-link> |
+				<router-link to="/appearance">Appearance</router-link> |
+				<router-link to="/me">Me</router-link> |
+				<router-link to="/one-piece">One-piece</router-link>
+			</div>
+		</v-toolbar>
+
+		<v-navigation-drawer permanent mini-variant mini-variant-width="100" floating fixed app>
+			<hello-world></hello-world>
+		</v-navigation-drawer>
+		
+		<v-content>
+			<router-view />
+		</v-content>
+
+	</v-app>
 </template>
 
+<script>
+	import HelloWorld from './components/HelloWorld.vue'
+	export default {
+		name: 'App',
+		components: {
+			HelloWorld
+		},
+		data: () => ({
+			left: false,
+		}),
+		methods: {
+			choose_tile() {
+				console.log(1);
+			}
+		}
+	}
+</script>
+
 <style>
+	.nav {}
 
-	* {
-		padding: 0;
-		margin: 0;
-	}
-	.logo {
-		width: 23rem;
-	}
-	#app {
-		font-family: 'Avenir', Helvetica, Arial, sans-serif;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-		color: #2c3e50;
-	}
-	.logo-div {
-		padding-top: 10px;
-		text-align: center;
-	}
-	#nav {
-		padding: 5px;
-		text-align: center;
-	}
-
-	#nav a {
+	.nav a {
 		font-weight: bold;
 		color: #2c3e50;
 	}
 
-	#nav a.router-link-exact-active {
+	.nav a.router-link-exact-active {
 		color: #42b983;
 	}
 </style>

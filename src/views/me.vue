@@ -13,6 +13,5 @@
 		right: 2rem;
 		bottom: 3rem;
 		width: 16rem;
-		z-index: -1;
 	}
 </style>

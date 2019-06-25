@@ -4,27 +4,31 @@
 	</div>
 </template>
 
+
 <script>
-	// @ is an alias to /src
-	
+
 	export default {
 		name: 'home',
 		components: {
 			
 		},
-		data() {
+		data(){
 			return {
-				
 			}
+		},
+		methods: {
+			
 		}
 	}
 </script>
-<style scroped>
+
+
+<style>
 	.home-bg {
 		position: absolute;
 		right: 2rem;
 		bottom: 3rem;
 		width: 16rem;
-		z-index: -1;
+		
 	}
 </style>
