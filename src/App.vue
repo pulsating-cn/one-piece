@@ -1,6 +1,7 @@
 <template>
 	<v-app id="inspire">
 		<v-toolbar color="elevation-0" fixed app dense>
+			<v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
 			<div class="nav">
 				<router-link to="/">Home</router-link> |
 				<router-link to="/appearance">Appearance</router-link> |
@@ -9,8 +10,8 @@
 			</div>
 		</v-toolbar>
 
-		<v-navigation-drawer permanent mini-variant mini-variant-width="100" floating fixed app>
-			<hello-world></hello-world>
+		<v-navigation-drawer v-model="drawer" mini-variant mini-variant-width="130" floating fixed app>
+			<sidebar></sidebar>
 		</v-navigation-drawer>
 		
 		<v-content>
@@ -21,14 +22,14 @@
 </template>
 
 <script>
-	import HelloWorld from './components/HelloWorld.vue'
+	import sidebar from './components/sidebar.vue'
 	export default {
 		name: 'App',
 		components: {
-			HelloWorld
+			sidebar
 		},
 		data: () => ({
-			left: false,
+			drawer: true
 		}),
 		methods: {
 			choose_tile() {

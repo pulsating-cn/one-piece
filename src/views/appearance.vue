@@ -4,7 +4,7 @@
 			<div class="description">
 
 			</div>
-			<img class="character-image" src="../assets/image/sort/7.jpg" />
+			<img class="character-image" src="/image/sort/7.jpg" />
 
 
 		</div>

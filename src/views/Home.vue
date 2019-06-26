@@ -1,6 +1,6 @@
 <template>
 	<div class="home">
-		<img class="home-bg" alt="bg-xiuxiu" src="../assets/image/main-bg/bg-xiuxiu.jpg">
+		<img class="home-bg" alt="bg-xiuxiu" src="/image/main-bg/bg-xiuxiu.jpg">
 	</div>
 </template>
 
