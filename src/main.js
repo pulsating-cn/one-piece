@@ -6,6 +6,10 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+var bus = new Vue();
+bus.activeSideBarIndex = 1;
+Vue.prototype.$bus = bus;
+
 new Vue({
   router,
   store,
