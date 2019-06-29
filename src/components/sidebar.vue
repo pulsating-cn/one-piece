@@ -65,9 +65,9 @@
 
 	.a-bar {
 		font-weight: bold;
-		font-size: .4rem;
+		font-size: 10px;
 		color: #2c3e50;
-		line-height: 2rem;
+		line-height: 1.5rem;
 	}
 
 	.active {
