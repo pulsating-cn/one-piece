@@ -14,6 +14,10 @@
 					<span>Monkey·D·Luffy</span>
 				</div>
 				<div class="detail-item">
+					<span class="detail-title">初次登场:</span>
+					<span class="detail-description">漫画第1章、动画第1集</span>
+				</div>
+				<div class="detail-item">
 					<span class="detail-title">外号:</span>
 					<span class="detail-description">“草帽小子”路飞（麦わらのルフィ）第5位海上皇帝（５番目の「海の皇帝」）</span>
 				</div>
