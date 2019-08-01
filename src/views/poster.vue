@@ -1,7 +1,7 @@
 <template>
 	<div class="poster">
-		<v-layout align-center justify-center>
-			<v-img src="/image/poster/3bro.jpg"></v-img>
+		<v-layout align-center justify-center v-for="i of 20" :key="i">
+			<v-img :src="'/image/poster/'+i+'.jpg'"></v-img>
 		</v-layout>
 	</div>
 </template>

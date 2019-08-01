@@ -2,17 +2,17 @@
 	<v-container id="dropdown-example">
 		<v-layout row wrap>
 			<v-flex xs12 sm4>
-				<v-layout row>
+				<v-layout column>
+					<div class="name">
+						<span>蒙奇·D·路飞</span>
+						<span>モンキー・D・ルフィ</span>
+						<span>Monkey·D·Luffy</span>
+					</div>
 					<v-img class="character-image" :src="characterImage"></v-img>
 				</v-layout>
 			</v-flex>
 
 			<div class="character-detail">
-				<div class="name">
-					<span>蒙奇·D·路飞</span>
-					<span>モンキー・D・ルフィ</span>
-					<span>Monkey·D·Luffy</span>
-				</div>
 				<div class="detail-item">
 					<span class="detail-title">初次登场:</span>
 					<span class="detail-description">漫画第1章、动画第1集</span>
@@ -140,11 +140,11 @@
 		font-weight: bold;
 	}
 
-	.character-detail .name {
-		margin-bottom: 30px;
+	.name {
+		margin-bottom: 10px;
 	}
 
-	.character-detail .name span {
+	.name span {
 		display: block;
 		font-weight: bold;
 		font-size: 14px;
