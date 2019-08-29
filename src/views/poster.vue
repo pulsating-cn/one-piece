@@ -15,21 +15,14 @@
 		},
 		data() {
 			return {
-				// screenWidth: document.body.clientWidth,
+				
 			}
 		},
 		created() {
-			console.log(this.screenWidth);
+			
 		},
 		mounted() {
-			// const that = this;
-			// window.onresize = () => {
-			// 	return (() => {
-			// 		window.screenWidth = document.body.clientWidth;
-			// 		that.screenWidth = window.screenWidth;
-			// 		console.log(that.screenWidth);
-			// 	})()
-			// }
+			
 		},
 		methods: {
 
